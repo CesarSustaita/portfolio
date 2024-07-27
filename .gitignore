@@ -28,3 +28,11 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+.vscode
+
+# json files 
+.prettierrc.json
+package-lock.json
+package.json
+jsconfig.json
