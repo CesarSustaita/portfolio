@@ -46,6 +46,17 @@
     height: 20px;
 }
 
+@media (max-width: 700px) {
+
+.links-container{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+}
+}
+
 
 
 </style>

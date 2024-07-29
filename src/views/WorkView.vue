@@ -65,7 +65,7 @@ export default {
   .container {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 350px;
   height: 100%;
   transition: width 0.5s;
   }
