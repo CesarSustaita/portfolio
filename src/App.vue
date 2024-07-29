@@ -3,15 +3,13 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-
-  <RouterView />
-  <section class="container">
-    
+  <section class="container-blur">
+    <RouterView />
   </section>
 </template>
 
 <style scoped> 
-.container {
+.container-blur {
   background: rgba(27, 31, 33, 0.67);
   backdrop-filter: blur(25px);
   height: 100vh;
