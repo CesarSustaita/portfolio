@@ -1,10 +1,12 @@
 <script>
 
-import navControls from '@/components/navbar/navbarControls.vue'
+import navControls from '@/components/navbar/navbarControls.vue';
+import buttonLinks from '@/components/navbar/buttonLinks.vue';
 
 export default {
     components: {
-        navControls
+        navControls,
+        buttonLinks
     }
 }
 
@@ -15,7 +17,7 @@ export default {
 <section class="navbar">
     <section class="titleLogo">César Sustaita</section>
     <section class="btnControls"><navControls/></section>
-    <section class="btnLinks">btn1 btn2</section>
+    <section class="btnLinks"><buttonLinks/></section>
 
 </section>
 
@@ -26,7 +28,6 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1280px;
     height: 44px;
     border: 0px solid red;
     margin-top: 46px;
@@ -36,7 +37,15 @@ export default {
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 3.5px;
-    width: 200px;
+    width: 214px;
+}
+
+
+@media (max-width: 900px) {
+
+.titleLogo{
+    display: none;
+}
 }
 
 

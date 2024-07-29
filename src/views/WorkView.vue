@@ -1,9 +1,11 @@
 <script>
-import navbarMain from '@/components/navbar/navbarMain.vue'
+import navbarMain from '@/components/navbar/navbarMain.vue';
+import workSection from '@/components/workContainer/workSection.vue';
 
 export default {
   components: {
-    navbarMain
+    navbarMain,
+    workSection
   }
 }
 
@@ -13,6 +15,7 @@ export default {
   <section class="container-align">
     <section class="container">
       <navbarMain />
+      <workSection />
     </section>
   </section>
   
@@ -32,5 +35,42 @@ export default {
   flex-direction: column;
   width: 1280px;
   height: 100%;
+  transition: width 0.5s;
+
 }
+
+@media (max-width: 1400px) {
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 100%;
+  transition: width 0.5s;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  height: 100%;
+  transition: width 0.5s;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 100%;
+  transition: width 0.5s;
+  }
+}
+
+
+
 </style>

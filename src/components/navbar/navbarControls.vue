@@ -20,7 +20,7 @@ export default{
         <input type="radio" id="info" value="Info" class="btn" v-model="picked" />
         <label for="info" class="custom-btn">Info</label>
   </section>
-    {{ picked }}
+    
 </template>
 
 <style scoped>
