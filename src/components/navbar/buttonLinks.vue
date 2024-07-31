@@ -39,6 +39,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px;
+}
+
+.btn:hover{
+    background-color: rgba(75, 71, 71, 0.35);
+    backdrop-filter: blur(180px);
+    box-shadow: rgba(10, 10, 10, 0.15) 0px 5px 15px 0px;
 }
 
 .icon{

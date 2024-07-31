@@ -35,6 +35,7 @@ export default{
     border-radius: 60px;
     background-color: rgba(155, 155, 155, 0.502);
     backdrop-filter: blur(60px);
+    box-shadow: rgba(197, 197, 197, 0.1) 0px 0px 16px;
 }
 
 .btn {
@@ -53,6 +54,7 @@ export default{
   height: 38px;
   cursor: pointer;
   transition: background-color 0.3s;
+  
 }
 
 .custom-btn:hover {
