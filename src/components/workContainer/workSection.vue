@@ -1,9 +1,11 @@
 <script>
 import greetings from '@/components/workContainer/greetingsArray.vue';
+import IntroductionPost from '@/components/workContainer/IntroductionPost.vue';
 
 export default {
     components: {
-        greetings
+        greetings,
+        IntroductionPost
     }
 }
 
@@ -12,6 +14,7 @@ export default {
 <template>
     <section class="container">
         <greetings/>
+        <IntroductionPost/>
     </section>
 </template>
 
@@ -29,22 +32,30 @@ export default {
     padding-top: 80px;
     padding-left: 100px;
     padding-right: 100px;
+}
 
+@media (max-width: 1400px) { 
+
+.container{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
 }
 
 @media (max-width: 900px) {
 
 .container{
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 }
 
 @media (max-width: 700px) {
 
 .container{
-    padding-top: 30px;
+    padding-top: 15px;
     padding-left: 24px;
     padding-right: 24px;
 }
