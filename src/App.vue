@@ -12,7 +12,7 @@ import { RouterView } from 'vue-router'
 .container-blur {
   background: rgba(27, 31, 33, 0.67);
   backdrop-filter: blur(25px);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 

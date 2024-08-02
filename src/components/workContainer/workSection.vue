@@ -1,11 +1,14 @@
 <script>
 import greetings from '@/components/workContainer/greetingsArray.vue';
 import IntroductionPost from '@/components/workContainer/IntroductionPost.vue';
+import MyWork from '@/components/workContainer/MyWork.vue';
+
 
 export default {
     components: {
         greetings,
-        IntroductionPost
+        IntroductionPost,
+        MyWork
     }
 }
 
@@ -15,6 +18,8 @@ export default {
     <section class="container">
         <greetings/>
         <IntroductionPost/>
+        <div class="line"></div>
+        <MyWork/>
     </section>
 </template>
 
@@ -24,7 +29,7 @@ export default {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
     border-radius: 20px;
     background-color: rgba(58, 56, 56, 0.28);
     backdrop-filter: blur(30px);
@@ -32,6 +37,12 @@ export default {
     padding-top: 80px;
     padding-left: 100px;
     padding-right: 100px;
+
+}
+
+.line {
+    border-bottom: 1px solid #8C8C8C;
+    margin-top: 60px;
 }
 
 @media (max-width: 1400px) { 
@@ -50,6 +61,12 @@ export default {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.line {
+    border-bottom: 1px solid #8C8C8C;
+    margin-top: 50px;
+}
+
 }
 
 @media (max-width: 700px) {
@@ -59,6 +76,12 @@ export default {
     padding-left: 24px;
     padding-right: 24px;
 }
+
+.line {
+    border-bottom: 1px solid #8C8C8C;
+    margin-top: 40px;
+}
+
 }
 
 </style>

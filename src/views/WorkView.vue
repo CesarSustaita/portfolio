@@ -1,11 +1,13 @@
 <script>
 import navbarMain from '@/components/navbar/navbarMain.vue';
 import workSection from '@/components/workContainer/workSection.vue';
+import footerContainer from '@/components/footer/footerContainer.vue';
 
 export default {
   components: {
     navbarMain,
-    workSection
+    workSection,
+    footerContainer
   }
 }
 
@@ -16,6 +18,7 @@ export default {
     <section class="container">
       <navbarMain />
       <workSection />
+      <footerContainer />
     </section>
   </section>
   
@@ -27,7 +30,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -36,7 +39,6 @@ export default {
   width: 1280px;
   height: 100%;
   transition: width 0.5s;
-
 }
 
 @media (max-width: 1400px) {
