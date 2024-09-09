@@ -43,18 +43,20 @@ const LINKS = [
   width: 44px;
   height: 44px;
   border-radius: 60px;
-  background-color: rgba(155, 155, 155, 0.502);
-  backdrop-filter: blur(60px);
+  background-color: rgba(94, 94, 94, 0.164);
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(140, 140, 140, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .btn:hover {
-  background-color: rgba(75, 71, 71, 0.35);
-  backdrop-filter: blur(180px);
-  box-shadow: rgba(10, 10, 10, 0.15) 0px 5px 15px 0px;
+  background-color: rgba(94, 94, 94, 0.405);
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(140, 140, 140, 0.5);
+  color: var(--btn-active-text-color);
 }
 
 .icon {
