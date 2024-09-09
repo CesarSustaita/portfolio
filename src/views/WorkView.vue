@@ -1,17 +1,26 @@
 <script setup>
 import NavbarMain from '@/components/navbar/NavbarMain.vue'
 import WorkSection from '@/components/WorkContainer/WorkSection.vue'
+import InfoContainer from '@/components/Info-Section/InfoContainer.vue'
 import footerContainer from '@/components/footer/footerContainer.vue'
+import { useSwitchControlStore } from '@/stores/Switch-ControlStore.js';
+import {  computed } from 'vue';
+
+const switchControlStore = useSwitchControlStore();
+const switchControl = computed(() => switchControlStore.switchValue);
+
 </script>
 
 <template>
   <section class="container-align">
     <section class="container">
       <NavbarMain />
-      <WorkSection />
+      <WorkSection v-if="switchControl"/>
+      <InfoContainer v-else />
       <footerContainer />
     </section>
   </section>
+  
 </template>
 
 <style scoped>
