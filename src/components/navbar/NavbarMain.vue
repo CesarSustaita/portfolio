@@ -24,7 +24,7 @@ import buttonLinks from '@/components/navbar/buttonLinks.vue'
 .titleLogo {
   font-size: 24px;
   font-weight: 400;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
   width: 214px;
 }
 

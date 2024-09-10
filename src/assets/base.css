@@ -10,6 +10,8 @@
   --vt-c-indigo: #2c3e50;
 
   --bg-c-glass: rgba(255, 255, 255, 0.502);
+
+  --text-bg-white: rgb(216, 216, 216);
 }
 
 /* semantic color variables for this project */
@@ -61,4 +63,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
