@@ -14,6 +14,7 @@ export default {
         <div class="title">About me</div>
         <PostAboutMe />
         <span class="line"></span>
+        <div class="title">Experience</div>
     </section>
 </template>
 
@@ -34,13 +35,14 @@ export default {
 }
 
 .title {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 400;
+    border: 0px solid black;
 }
 
 .line {
-  border-bottom: 1px solid #8c8c8c;
-  margin-top: 60px;
+  border-bottom: 1px solid #8c8c8c34;
+  margin-top: 30px;
 }
 
 @media (max-width: 1400px) {
@@ -56,26 +58,28 @@ export default {
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
-}
+  }
 
-.line {
-  border-bottom: 1px solid #8c8c8c;
-  margin-top: 60px;
-}
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+    border: 0px solid black;
+  }
+
+  .line {
+    border-bottom: 1px solid #8c8c8c34;
+    margin-top: 10px;
+  }
 
 }
 
 @media (max-width: 700px) {
   .info-container {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 24px;
     padding-right: 24px;
 }
 
-.line {
-  border-bottom: 1px solid #8c8c8c;
-  margin-top: 60px;
-}
 
 }
 
