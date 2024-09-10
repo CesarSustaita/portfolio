@@ -1,176 +1,91 @@
 <script></script>
 
 <template>
-  <section class="containter">
-    <section class="photo-container">
-      <img class="photo" src="/post-photos/me.webp" alt="Photo of myself" />
-      <span class="line"></span>
-    </section>
-    <section class="text-subtext">
-      <section class="text-container">
-        <div class="title">César Sustaita</div>
-        <time class="date-container" datetime="2024-07-22">July 22, 2024</time>
-      </section>
-      <p class="subtitle">
-        Since I was a child, I have always been fascinated by how web and mobile applications work. 
-        I studied intelligent systems engineering, where I discovered my passion for UX/UI design. 
-        I love creating intuitive and efficient user experiences.
+  <section class="about-me">
+    <div class="text">
+      <p class="p">
+        My passion for UX/UI design started during my engineering studies 
+        when I worked on a university project that exposed me to the full 
+        design process. 
       </p>
-    </section>
+      <p class="p"> 
+        Since then, I’ve focused on creating intuitive and efficient products, 
+        inspired by the minimalist and functional approach of Apple’s systems. 
+      </p>
+    </div>
+    <div class="text">
+      <p class="p">
+        I’ve worked on university projects, hackathons, startups, and companies, 
+        where I’ve led the design and participated in the implementation on web platforms, 
+        including frontend development.
+      </p>
+      <p class="p"> 
+        I aim to make every interface visually appealing and easy to use, ensuring a smooth 
+        and enjoyable experience for users. 
+      </p>
+    </div>
   </section>
 </template>
 
 <style scoped>
-.containter {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  gap: 24px;
-}
 
-.text-subtext {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  width: 100%;
-  border: 1px solid black;
-}
-
-.photo-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.photo {
-  width: 54px;
-  height: 54px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.line {
-  border-left: 1px solid #8c8c8c;
-  height: 130px;
-}
-
-.text-container {
+.about-me {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
-  height: 54px;
+  margin-top: 28px;
 }
 
-.title {
-  font-size: 20px;
+.p{
+  margin-bottom: 12px;
 }
 
-.subtitle {
-  font-size: 16px;
-  width: 550px;
+.text{
+  width: 500px;
+  font-size: 18px;
+  color: var(--text-bg-white);
+}
+
+@media (max-width: 1400px) { 
+
+  .text{
+  width: 370px;
+  font-size: 18px;
+  }
 }
 
 @media (max-width: 900px) {
-  .containter {
-    justify-content: space-between;
-    margin-top: 30px;
+
+  .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
   }
 
-  .text-subtext {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    width: 100%;
+  .p{
+  margin-bottom: 16px;
   }
 
-  .photo-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  .text{
+  width: 100%;
+  font-size: 18px;
   }
 
-  .photo {
-    width: 48px;
-    height: 48px;
+}
+
+@media (max-width: 700px) {
+
+  .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 14px;
   }
 
-  .line {
-    border-left: 1px solid #8c8c8c;
-    height: 110px;
-  }
-
-  .text-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:baseline;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    width: 490px;
-  }
-
-  @media (max-width: 700px) {
-    .containter {
-      gap: 14px;
-      margin-top: 15px;
-    }
-
-    .text-subtext {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      width: 100%;
-    }
-
-    .photo-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .photo {
-      width: 40px;
-      height: 40px;
-    }
-
-    .line {
-      border-left: 1px solid #8c8c8c;
-      height: 130px;
-    }
-
-    .text-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .title {
-      font-size: 26px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      width: 240px;
-    }
-
-    .date-container {
-      font-size: 14px;
-    }
+  .text{
+  width: 100%;
+  font-size: 16px;
   }
 }
 </style>
