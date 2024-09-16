@@ -104,7 +104,7 @@ export default {
   }
 
   .custom-btn:hover {
-    background-color: rgba(3, 3, 3, 0.35);
+    background-color: rgba(94, 94, 94, 0.164);
     backdrop-filter: blur(180px);
   }
 
@@ -116,4 +116,3 @@ export default {
   }
 }
 </style>
-@/stores/Switch-ControlStore.js

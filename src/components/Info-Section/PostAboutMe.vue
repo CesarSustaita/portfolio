@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .p{
@@ -60,7 +60,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 24px;
   }
 
   .p{
@@ -85,7 +85,7 @@
 
   .text{
   width: 100%;
-  font-size: 16px;
+  font-size: 15px;
   }
 }
 </style>

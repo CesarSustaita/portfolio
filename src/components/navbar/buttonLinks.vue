@@ -24,6 +24,17 @@ const LINKS = [
 </template>
 
 <style scoped>
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 .links-container {
   width: 214px;
   height: 44px;
@@ -57,6 +68,10 @@ const LINKS = [
   backdrop-filter: blur(50px);
   border: 1px solid rgba(140, 140, 140, 0.5);
   color: var(--btn-active-text-color);
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .icon {
