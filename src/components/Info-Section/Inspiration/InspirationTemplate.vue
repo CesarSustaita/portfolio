@@ -1,9 +1,9 @@
 <script>
 
 export default {
-    name: 'ExperienceTemplate',
+    name: 'InspirationTemplate',
     props: {
-        experienceName: {
+        name: {
             type: String,
             required: true
         },
@@ -11,15 +11,20 @@ export default {
             type: String,
             required: true
         },
-        date: {
+        link: {
             type: String,
-            required: true
+      default: 'Visit Link'
         },
         description: {
             type: String,
-            required: true
+            required: false
         },
+    },
+    methods: {
+    navigateToLink() {
+      window.open('https://' + this.link, '_blank');
     }
+  }
 
 }
 
@@ -28,22 +33,59 @@ export default {
 
 <template>
     <section class="container">
-        <section class="experience-name">{{ experienceName }} </section>
+        <section class="experience-name">{{ name }} </section>
         <section class="content">
             <section class="rol-date">
                 <section class="rol">{{ rol }}</section>
-                <section class="date"> {{ date }} </section>
             </section>
             <section class="description">
                 <p>
                     {{ description }}
                 </p>
-            </section>    
+            </section>  
+            <section class="btn-link" v-if="link" @click="navigateToLink">
+                <button class="date" > {{ link }} </button> 
+                <div class="arrow-link"></div>
+            </section> 
         </section>
     </section>
 </template>
 
 <style scoped>
+
+.btn-link{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.btn-link:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    cursor: pointer;
+}
+
+.arrow-link{
+    background-image: url('/src/assets/Arrow up-right.svg');
+    width: 22px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+button {
+    all: unset;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+button:hover {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.647);
+}
+
 
 .container {
     display: flex;
@@ -59,7 +101,7 @@ export default {
     width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 4px;
 }
 
 .rol-date {
@@ -97,7 +139,7 @@ export default {
 
     .content{
     width: 100%;
-    gap: 16px;
+    gap: 4px;
     }
 
     .experience-name {
