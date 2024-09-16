@@ -51,7 +51,7 @@
 }
 
 .line {
-  border-left: 1px solid #8c8c8c;
+  border: 1px solid #8c8c8c34;
   height: 130px;
 }
 
@@ -68,6 +68,11 @@
 .subtitle {
   font-size: 20px;
   width: 550px;
+  color: var(--text-bg-white-description);
+}
+
+.date-container{
+  color: var(--text-bg-white-date);
 }
 
 @media (max-width: 900px) {
@@ -97,7 +102,7 @@
   }
 
   .line {
-    border-left: 1px solid #8c8c8c;
+    border: 1px solid #8c8c8c34;
     height: 110px;
   }
 
@@ -143,7 +148,7 @@
     }
 
     .line {
-      border-left: 1px solid #8c8c8c;
+      border: 1px solid #8c8c8c34;
       height: 130px;
     }
 

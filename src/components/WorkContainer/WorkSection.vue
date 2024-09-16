@@ -29,8 +29,8 @@ import MyWork from '@/components/WorkContainer/MyWork.vue'
 }
 
 .line {
-  border-bottom: 1px solid #8c8c8c;
-  margin-top: 60px;
+  border: 1px solid #8c8c8c34;
+  margin-top: 54px;
 }
 
 @media (max-width: 1400px) {
@@ -49,8 +49,8 @@ import MyWork from '@/components/WorkContainer/MyWork.vue'
   }
 
   .line {
-    border-bottom: 1px solid #8c8c8c;
-    margin-top: 50px;
+    border: 1px solid #8c8c8c34;
+    margin-top: 46px;
   }
 }
 
@@ -62,7 +62,7 @@ import MyWork from '@/components/WorkContainer/MyWork.vue'
   }
 
   .line {
-    border-bottom: 1px solid #8c8c8c;
+    border: 1px solid #8c8c8c34;
     margin-top: 40px;
   }
 }

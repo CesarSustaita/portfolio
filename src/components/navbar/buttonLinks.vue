@@ -5,7 +5,7 @@ const LINKS = [
   {
     name: 'Resume',
     icon: ResumeIcon,
-    link: 'resume.pdf'
+    link: '/fallback'
   },
   {
     name: 'LinkedIn',

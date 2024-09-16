@@ -1,11 +1,13 @@
 <script>
 import PostAboutMe from '@/components/Info-Section/PostAboutMe.vue'
 import PostExperience from '@/components/Info-Section/ExperienceContainer.vue'
+import PostInspiration from '@/components/Info-Section/InspirationContainer.vue'
 
 export default {
     components: {
         PostAboutMe,
-        PostExperience
+        PostExperience,
+        PostInspiration
     }
 }
 
@@ -20,6 +22,7 @@ export default {
         <PostExperience />
         <span class="line"></span>
         <div class="title">Inspiration</div>
+        <PostInspiration />
     </section>
 </template>
 
