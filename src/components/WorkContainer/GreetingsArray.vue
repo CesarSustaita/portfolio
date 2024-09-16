@@ -26,7 +26,7 @@ let intervalId
 onMounted(() => {
   const INTERVAL_TIME = 3000
 
-  // Cambia cada 3 segundos
+  // Cambia cada 3 segundos 
   intervalId = setInterval(updateGreeting, INTERVAL_TIME)
 })
 

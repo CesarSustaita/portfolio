@@ -52,7 +52,7 @@
 }
 
 .line {
-  border-left: 1px solid #8c8c8c;
+  border-bottom: 1px solid #8c8c8c34;
   height: 130px;
 }
 
@@ -101,7 +101,7 @@
   }
 
   .line {
-    border-left: 1px solid #8c8c8c;
+    border-bottom: 1px solid #8c8c8c34;
     height: 110px;
   }
 
@@ -148,7 +148,7 @@
     }
 
     .line {
-      border-left: 1px solid #8c8c8c;
+      border-bottom: 1px solid #8c8c8c34;
       height: 130px;
     }
 

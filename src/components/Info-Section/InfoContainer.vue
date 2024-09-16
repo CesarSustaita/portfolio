@@ -1,9 +1,11 @@
 <script>
 import PostAboutMe from '@/components/Info-Section/PostAboutMe.vue'
+import PostExperience from '@/components/Info-Section/ExperienceContainer.vue'
 
 export default {
     components: {
-        PostAboutMe
+        PostAboutMe,
+        PostExperience
     }
 }
 
@@ -15,6 +17,9 @@ export default {
         <PostAboutMe />
         <span class="line"></span>
         <div class="title">Experience</div>
+        <PostExperience />
+        <span class="line"></span>
+        <div class="title">Inspiration</div>
     </section>
 </template>
 
@@ -32,6 +37,7 @@ export default {
   padding-top: 80px;
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 80px;
 }
 
 .title {
@@ -42,7 +48,8 @@ export default {
 
 .line {
   border-bottom: 1px solid #8c8c8c34;
-  margin-top: 30px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1400px) {
@@ -61,14 +68,14 @@ export default {
   }
 
   .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
-    border: 0px solid black;
   }
 
   .line {
     border-bottom: 1px solid #8c8c8c34;
-    margin-top: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
 }
