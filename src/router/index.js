@@ -3,6 +3,7 @@ import WorkView from '@/views/WorkView.vue'
 import fallbackView from '@/views/fallbackView.vue'
 
 const router = createRouter({
+  mode: 'history',
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
