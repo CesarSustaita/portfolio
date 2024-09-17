@@ -13,7 +13,7 @@ export default {
         },
         link: {
             type: String,
-      default: 'Visit Link'
+        default: 'Visit Link'
         },
         description: {
             type: String,

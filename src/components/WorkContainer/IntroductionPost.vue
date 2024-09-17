@@ -9,7 +9,7 @@
     <section class="text-subtext">
       <section class="text-container">
         <div class="title">I'm César Sustaita</div>
-        <time class="date-container" datetime="2024-07-22">July 22, 2024</time>
+        <time class="date-container" datetime="2024-07-22">Sep 01, 2024</time>
       </section>
       <p class="subtitle">
         I'm a Systems Engineer and UX/UI Designer at Daikin Applied. I design intuitive and
