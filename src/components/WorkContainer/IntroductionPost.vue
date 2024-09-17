@@ -2,13 +2,15 @@
 
 <template>
   <section class="containter">
+    <!---->
     <section class="photo-container">
       <img class="photo" src="/post-photos/me.webp" alt="Photo of myself" />
       <span class="line"></span>
     </section>
+    
     <section class="text-subtext">
       <section class="text-container">
-        <div class="title">I'm César Sustaita</div>
+        <div class="title">I'm  César Sustaita.</div>
         <time class="date-container" datetime="2024-07-22">Sep 01, 2024</time>
       </section>
       <p class="subtitle">
@@ -21,11 +23,17 @@
 </template>
 
 <style scoped>
+
+br {
+  display: none;
+}
+
 .containter {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 28px;
   gap: 24px;
+  border: 0px solid black;
 }
 
 .text-subtext {
@@ -63,6 +71,7 @@
 
 .title {
   font-size: 36px;
+  
 }
 
 .subtitle {
@@ -121,10 +130,18 @@
     width: 490px;
   }
 
+  .date-container{
+  visibility: hidden;
+  }
+
   @media (max-width: 700px) {
+
+    br {
+      display:flex;
+    }
     .containter {
       gap: 14px;
-      margin-top: 15px;
+      margin-top: 0px;
     }
 
     .text-subtext {
@@ -135,11 +152,7 @@
     }
 
     .photo-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
+      display: none;
     }
 
     .photo {
@@ -160,16 +173,16 @@
     }
 
     .title {
-      font-size: 26px;
+      font-size: 32px;
     }
 
     .subtitle {
       font-size: 14px;
-      width: 240px;
+      width: 100%;
     }
 
-    .date-container {
-      font-size: 14px;
+    .date-container{
+    display: none;
     }
   }
 }

@@ -2,16 +2,16 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const GREETINGS = [
-  'Hola',
-  'Hi',
-  'Bonjour',
-  'Ciao',
-  'Привет',
-  'こんにちは',
-  'Hei',
-  'Merhaba',
-  'Hallo',
-  'مرحبا'
+  'Hola.',
+  'Hi.',
+  'Bonjour.',
+  'Ciao.',
+  'Привет.',
+  'こんにちは.',
+  'Hei.',
+  'Merhaba.',
+  'Hallo.',
+  'مرحبا.'
 ]
 
 const currentGreeting = ref(0)
@@ -37,7 +37,9 @@ onUnmounted(() => {
 
 <template>
   <section class="greetings">
-    {{ GREETINGS[currentGreeting] }}
+    <transition name="fade">
+      <p :key="currentGreeting">{{ GREETINGS[currentGreeting] }}</p>
+    </transition>
   </section>
 </template>
 
@@ -46,17 +48,32 @@ onUnmounted(() => {
   font-size: 64px;
   line-height: auto;
   font-weight: 600;
+  height: 84px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+  position: absolute;
+ 
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  
 }
 
 @media (max-width: 900px) {
   .greetings {
     font-size: 50px;
+    height: 62px;
   }
 }
 
 @media (max-width: 700px) {
   .greetings {
-    font-size: 40px;
+    font-size: 34px;
+    position: relative;
+    height: 58px;
   }
 }
 </style>
