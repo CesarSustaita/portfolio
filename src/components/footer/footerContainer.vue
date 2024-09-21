@@ -90,7 +90,7 @@ a{
 }
 
 .arrow-link{
-    background-image: url('/src/assets/Arrow up-right.svg');
+    background-image: url('/src/assets/icons/Arrow up-right.svg');
     width: 22px;
     height: 25px;
     object-fit: cover;

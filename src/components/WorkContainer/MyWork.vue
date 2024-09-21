@@ -3,14 +3,26 @@ import CardProject from '@/components/CardsProject/CardProject.vue'
 
 const PROJECTS = [
   {
-    name: 'Project 1'
+    projectName: 'Ecotide',
+    img: 'Ecotide',
+    hover: 'View Project'
   },
   {
-    name: 'Project 2'
+    projectName: 'Nourish',
+    img: 'Nourish',
+    hover: 'View Project'
   },
   {
-    name: 'Project 3'
+    projectName: 'Design System',
+    img: 'comingsoon1',
+    hover: 'Coming Soon'
   },
+  {
+    projectName: 'ETN',
+    img: 'comingsoon2',
+    hover: 'Coming Soon'
+  },
+  
   
 ]
 </script>
@@ -18,7 +30,13 @@ const PROJECTS = [
 <template>
   <section class="title">My Work</section>
   <section class="grid">
-    <CardProject v-for="project in PROJECTS" :key="project.name" />
+    <CardProject 
+    v-for="project in PROJECTS" 
+    :key="project.projectName" 
+    :projectName="project.projectName" 
+    :img="project.img" 
+    :hover="project.hover"
+    />
   </section>
 </template>
 
@@ -30,10 +48,48 @@ const PROJECTS = [
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 60px;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  justify-content: space-between; 
+  row-gap: 30px;
+  transition: all 0.3s ease;
 }
+
+@media (max-width: 1400px) {
+
+  .grid {
+  display: grid;
+  grid-template-columns: 340px 340px;
+  justify-content: space-around; 
+  row-gap: 46px;
+  transition: all 0.3s ease;
+}
+}
+
+@media (max-width: 900px) {
+
+  .grid {
+  display: grid;
+  grid-template-columns: 280px 280px;
+  justify-content: space-between; 
+  row-gap: 28px;
+  transition: all 0.3s ease;
+}
+}
+
+@media (max-width: 700px) {
+
+  .grid {
+  display: grid;
+  grid-template-columns: 142px 142px;
+  justify-content: space-between; 
+  row-gap: 18px;
+  transition: all 0.3s ease;
+}
+
+}
+
+
 </style>
