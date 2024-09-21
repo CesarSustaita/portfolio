@@ -25,7 +25,7 @@ export default {
     <section class="container-cards" 
     :style="{
       backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), 
-      url('/src/assets/projects/${img}.svg')`}">
+      url('./projects/${img}.webp')`}">
       <div class="title-card">{{ projectName }}</div> 
       <div class="title-hover">{{ hover }} </div> 
     </section>
