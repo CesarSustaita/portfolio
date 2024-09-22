@@ -51,9 +51,9 @@ const PROJECTS = [
   margin-top: 40px;
   margin-bottom: 60px;
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: 348px 348px 348px;
   justify-content: space-between; 
-  row-gap: 30px;
+  row-gap: 22px;
   transition: all 0.3s ease;
 }
 
@@ -61,9 +61,9 @@ const PROJECTS = [
 
   .grid {
   display: grid;
-  grid-template-columns: 340px 340px;
+  grid-template-columns: 368px 368px;
   justify-content: space-around; 
-  row-gap: 46px;
+  row-gap: 22px;
   transition: all 0.3s ease;
 }
 }
@@ -72,9 +72,9 @@ const PROJECTS = [
 
   .grid {
   display: grid;
-  grid-template-columns: 280px 280px;
+  grid-template-columns: 286px 286px;
   justify-content: space-between; 
-  row-gap: 28px;
+  row-gap: 18px;
   transition: all 0.3s ease;
 }
 }
@@ -83,9 +83,9 @@ const PROJECTS = [
 
   .grid {
   display: grid;
-  grid-template-columns: 142px 142px;
+  grid-template-columns: 146px 146px;
   justify-content: space-between; 
-  row-gap: 18px;
+  row-gap: 10px;
   transition: all 0.3s ease;
 }
 
