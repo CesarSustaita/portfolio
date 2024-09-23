@@ -87,8 +87,8 @@ export default {
 
         <div class="modal-footer">
           <section class="btn-link"  >
-                <button  class="btn-primary">Explore Project</button>
-                <div class="arrow-link"></div>
+                <button  class="btn-primary">See more</button>
+                <div class="arrow-right"></div>
           </section> 
           <button @click="handleClose" class="btn-seconday">Close</button>
         </div>
@@ -101,54 +101,69 @@ export default {
 <style scoped>
 
 .btn-link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2px;
-    border: 1px solid rgba(105, 105, 105, 0);
-    border-radius: 8px;
-    padding: 8px 14px;
-    background-color: rgba(25, 25, 25, 0.763);
-    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  padding: 10px 14px;
+  background-color: var(--vt-c-white-soft);
+  color: var(--vt-c-black-soft);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  line-height: 18px;
 }
 
 .btn-link:hover{
   display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2px;
-    border: 1px solid rgba(105, 105, 105, 0);
-    border-radius: 8px;
-    padding: 8px 14px;
-    background-color: rgba(25, 25, 25, 0.564);
-    backdrop-filter: blur(50px);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  padding: 10px 14px;
+  background-color: #d5d5d5;
+  color: var(--vt-c-black-soft);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+    
 }
 
 .btn-seconday{
-  border-radius: 8px;
-  padding: 8px 14px;
-  border: 1px solid rgba(62, 62, 62, 0.5);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--vt-c-white-soft);
+  border-radius: 30px;
+  padding: 10px 16px;
+  color: var(--vt-c-white-soft);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   cursor: pointer;
 }
 
 .btn-seconday:hover{
-  border-radius: 8px;
-  padding: 8px 14px;
-  border: 1px solid rgba(62, 62, 62, 0.5);
-  background-color: rgba(80, 80, 80, 0.301);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #f8f8f800;
+  border-radius: 30px;
+  padding: 10px 16px;
+  background-color: #464646;
+  color: var(--vt-c-white-soft);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   cursor: pointer;
 }
 
-.arrow-link{
-    background-image: url('/src/assets/icons/Arrow up-right.svg');
-    width: 22px;
-    height: 22px;
+.arrow-right{
+    background-image: url('/src/assets/icons/Arrow-right.svg');
+    width: 20px;
+    height: 19px;
     object-fit: cover;
     object-position: center;
     align-items: center;
@@ -157,10 +172,8 @@ export default {
 button {
     all: unset;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
-    font-size: 18px;
-    
-    color: var(--text-bg-white-date);
-
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .modal-enter-from {
@@ -184,11 +197,14 @@ button {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.282);
-  z-index: 9999;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
+  overflow: auto;
 }
 
 .modal-container {
@@ -197,7 +213,7 @@ button {
   border-radius: 16px;
   padding: 24px;
   width: 530px;
-  position: relative;
+  margin: auto;
   background-color: rgba(94, 94, 94, 0.164);
   backdrop-filter: blur(50px);
   border: 1px solid rgba(105, 105, 105, 0.5);
