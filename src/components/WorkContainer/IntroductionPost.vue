@@ -14,9 +14,8 @@
         <time class="date-container" datetime="2024-07-22">Sep 01, 2024</time>
       </section>
       <p class="subtitle">
-        I'm a Systems Engineer and UX/UI Designer at Daikin Applied. I design intuitive and
-        functional experiences. As a Frontend Developer, I turn ideas into usable and attractive
-        products.
+        I am a Intelligent Systems Engineer and UX/UI Designer dedicated to crafting intuitive and functional experiences. 
+        As a Frontend Developer, I bring ideas to life by creating engaging and user-friendly products.
       </p>
     </section>
   </section>

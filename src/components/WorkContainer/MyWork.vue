@@ -9,12 +9,12 @@ const PROJECTS = [
     projectName: 'Ecotide',
     img: 'Ecotide',
     hover: 'View Project',
-    description: 'Web platform where you can explore detailed information about the ocean, phytoplankton species, and the difference between ocean gardens and land gardens, featuring visually stunning imagery for viewers and immersive ocean sounds.',
+    description: 'Immersive web platform that explores marine biodiversity, focusing on phytoplankton and its crucial role in oxygen production. The project, a finalist in the NASA International Space Apps Challenge, aims to raise awareness about ocean conservation through stunning visuals and immersive sounds, offering an interactive experience.',
     projectDate: 'Sep 2023',
     position: 'Led UX/UI Design',
     location: 'Space Apps Hackathon, Querétaro, Mexico',
     build: 'Figma, Vue3.js',
-  
+    pdf: 'https://drive.google.com/file/d/1fY5wWCC9Ve-DGZcEoRckKs5CdwSOKaNR/view?usp=drive_link',
   },
   {
     isShow: true,
@@ -26,6 +26,7 @@ const PROJECTS = [
     position: 'Led UX/UI Design',
     location: 'WaffleHacks 2023 Hackathon, Remote SLP, Mexico',
     build: 'Figma, Vue3.js',
+    pdf: 'https://drive.google.com/file/d/12_nFvpAqAZftW35wOL7fK8Ietfr51F1y/view?usp=drive_link',
   },
   {
     isShow: false,
@@ -37,6 +38,7 @@ const PROJECTS = [
     position: '',
     location: '',
     build: '',
+    pdf: '',
   },
   {
     isShow: false,
@@ -48,6 +50,7 @@ const PROJECTS = [
     position: '',
     location: '',
     build: '',
+    pdf: '',
   },
   
   
@@ -84,7 +87,7 @@ const openModal = (project) => {
   </section>
 
   <Teleport to="body">
-    <ModalProject :show="showModal" @close="showModal = false">
+    <ModalProject :show="showModal" @close="showModal = false" :pdf="selectedProject?.pdf">
       <template #header>
         {{ selectedProject?.projectName || '---' }}
       </template>

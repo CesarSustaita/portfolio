@@ -17,9 +17,14 @@ export default {
       type: String,
       required: true,
     },
+    pdf: {
+      type: String,
+      required: true,
+    }
     
   },
   setup(props, { emit }) {
+
     watch(
       () => props.show,
       (newVal) => {
@@ -86,10 +91,10 @@ export default {
         </section>
 
         <div class="modal-footer">
-          <section class="btn-link"  >
+          <a :href="pdf" target="_blank" class="btn-link" >
                 <button  class="btn-primary">See more</button>
                 <div class="arrow-right"></div>
-          </section> 
+          </a> 
           <button @click="handleClose" class="btn-seconday">Close</button>
         </div>
       </div>
@@ -112,6 +117,10 @@ export default {
   color: var(--vt-c-black-soft);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   cursor: pointer;
+}
+
+a{
+  all: unset;
 }
 
 .btn-primary {
