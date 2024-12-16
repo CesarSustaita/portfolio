@@ -5,7 +5,8 @@ const LINKS = [
   {
     name: 'Resume',
     icon: ResumeIcon,
-    link: '/fallback'
+    //link: '/fallback'
+    link: 'https://drive.google.com/file/d/1m29UYfJ1y59mRQFwQfce1o4byisxP5u4/view?usp=sharing'
   },
   {
     name: 'LinkedIn',
